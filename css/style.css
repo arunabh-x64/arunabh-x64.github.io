@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+    background-image: radial-gradient(circle at 99% 33%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 37%, transparent 37%, transparent 100%), radial-gradient(circle at 46% 16%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 43%, transparent 43%, transparent 100%), radial-gradient(circle at 99% 25%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 22%, transparent 22%, transparent 100%), radial-gradient(circle at 57% 88%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 86%, transparent 86%, transparent 100%), radial-gradient(circle at 82% 78%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 22%, transparent 22%, transparent 100%), linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+}
+
+.container {
+    display: block;
+}
+
+header {
+    /* border: 2px solid rgb(82, 76, 76); */
+    height: 3rem;
+}
+
+.center {
+    display: block;
+}
+.center .center-flex{
+    /* border: 2px solid cyan; */
+    margin: 2px;
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    height: 22rem;
+}
+
+.content {
+    /* border: 2px solid red; */
+    width: 60%;
+    margin: 5px;
+}
+.content ul{
+    padding-left: 0px;
+}
+.content ul li{
+    list-style-type: none;
+    line-height: 25px;
+}
+h2{
+    margin: 5px;
+}
+
+.profile {
+    /* border: 2px solid red; */
+    /* width: 40%; */
+    margin: 5px auto;
+    padding: 10px;
+    height: 19rem;
+    flex-shrink: 1;
+}
+
+.social {
+    /* border: 2px solid rgb(109, 89, 89); */
+    margin: 1rem 15rem;
+    height: 6rem;
+    display: block;
+    justify-content: space-around;
+}
+
+#profile {
+    height: 18rem;
+    display: block;
+    margin: auto;
+    border-radius: 9rem;
+}
+
+
+@media only screen and (max-width:900px){
+    header{
+        display: none;
+    }
+    .center{
+        height: 90vh;
+    }
+    .center .center-flex{
+        margin: 0px;
+        height: 90vh;
+    }
+    .content{
+        order: 2;
+        width: 95%;
+    }
+    .profile{
+        order: 1;
+        /* height: ; */
+    }
+    .social{
+        display: block;
+        margin: 10px auto;
+        width: 95%;
+    }
+    h1{
+        font-size: 29px;
+    }
+}
